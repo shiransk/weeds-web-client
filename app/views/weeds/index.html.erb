@@ -1,0 +1,10 @@
+ <ul>
+  <% @brands.each do |brand| %>
+     <li>name - <%= brand["name"] %></li>
+     <li>price - <%= brand["price"] %></li>
+     <li>strain - <%= brand["strain"] %></li>
+     <li><%= link_to 'Delete', "/weeds/#{brand['id']}", method: :Delete %></li>
+     <li><%= link_to 'Update', "/weeds/#{brand['id']}", method: :patch %></li>
+     <li>------------------------</li>
+  <% end %>
+ </ul>

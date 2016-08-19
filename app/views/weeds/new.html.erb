@@ -1,0 +1,20 @@
+<%= form_tag '/weeds/:id', method: :post %>
+
+<div>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %>  
+</div>
+
+<div>
+  <%= label_tag :price %>
+  <%= text_field_tag :price %>
+</div>
+
+<div>
+  <%= label_tag :strain %>
+  <%= text_field_tag :strain %>
+</div>
+
+<%= submit_tag "Submit" %>
+
+<% end %>
